@@ -1,4 +1,4 @@
-package pageObject;
+package pageObject.bankGuru;
 
 public class RegisterPageObject {
 
