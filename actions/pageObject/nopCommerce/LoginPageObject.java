@@ -8,7 +8,6 @@ import pageUIs.nopCommerce.LoginPageUI;
 public class LoginPageObject extends BasePage{
 	private WebDriver driver;
 	public LoginPageObject(WebDriver driver) {
-		// TODO Auto-generated constructor stub
 		this.driver = driver;
 	}
 

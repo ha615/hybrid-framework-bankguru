@@ -10,7 +10,6 @@ public class HomePageObject extends BasePage {
 	private WebDriver driver;
 	
 	public HomePageObject(WebDriver driver) {
-		// TODO Auto-generated constructor stub
 		this.driver = driver;
 	}
 
