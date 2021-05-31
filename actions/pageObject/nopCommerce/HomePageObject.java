@@ -13,20 +13,22 @@ public class HomePageObject extends BasePage {
 		this.driver = driver;
 	}
 
-	public boolean isVerifyHomePageSliderDisplayed() {
+	public boolean verifyHomePageSliderDisplayed() {
 		waitForElementVisible(driver, HomePageUI.HOME_PAGE_SLIDER);
 		return isElementDisplayed(driver, HomePageUI.HOME_PAGE_SLIDER);
 	}
 
-	public void clickToRegisterLink() {
+	public RegisterPageObject clickToRegisterLink() {
 		waitForElementClickable(driver, HomePageUI.REGISTER_LINK);
 		clickToElement(driver, HomePageUI.REGISTER_LINK);
+		return PageGeneratorManager.getRegisterPage(driver);
 	}
 
-	public void clikToLoginLink() {
+	public LoginPageObject clikToLoginLink() {
+		waitForElementClickable(driver, HomePageUI.LOGIN_LINK);
 		clickToElement(driver, HomePageUI.LOGIN_LINK);
+		return PageGeneratorManager.getLoginPage(driver);
+		
 	}
-
-
 
 }

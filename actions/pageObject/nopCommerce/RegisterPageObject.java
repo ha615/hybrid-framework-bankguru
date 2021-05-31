@@ -17,7 +17,7 @@ public class RegisterPageObject extends BasePage {
 
 	public void clickToGenderRadio() {
 		// TODO Auto-generated method stub
-		waitForElementVisible(driver, RegisterPageUI.GENDER_RADIO);
+		waitForElementClickable(driver, RegisterPageUI.GENDER_RADIO);
 		clickToElement(driver, RegisterPageUI.GENDER_RADIO);
 	}
 
@@ -57,9 +57,10 @@ public class RegisterPageObject extends BasePage {
 		return isElementDisplayed(driver, RegisterPageUI.SUCESS_MESSAGE);
 	}
 
-	public void clickToLogoutLink() {
-		// TODO Auto-generated method stub
+	public HomePageObject clickToLogoutLink() {
+		waitForElementClickable(driver, RegisterPageUI.LOGOUT_LINK);
 		clickToElement(driver, RegisterPageUI.LOGOUT_LINK);
+		return PageGeneratorManager.getHomePape(driver);
 	}
 
 }
