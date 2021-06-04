@@ -8,13 +8,13 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObject.nopCommerce.HomePageObject;
-import pageObject.nopCommerce.LoginPageObject;
-import pageObject.nopCommerce.MyAccountPageObject;
-import pageObject.nopCommerce.OrderPageObject;
-import pageObject.nopCommerce.PageGeneratorManager;
-import pageObject.nopCommerce.RegisterPageObject;
-import pageObject.nopCommerce.SearchPageObject;
+import pageObject.user.nopCommerce.HomePageObject;
+import pageObject.user.nopCommerce.LoginPageObject;
+import pageObject.user.nopCommerce.MyAccountPageObject;
+import pageObject.user.nopCommerce.OrderPageObject;
+import pageObject.user.nopCommerce.PageGeneratorManager;
+import pageObject.user.nopCommerce.RegisterPageObject;
+import pageObject.user.nopCommerce.SearchPageObject;
 
 
 

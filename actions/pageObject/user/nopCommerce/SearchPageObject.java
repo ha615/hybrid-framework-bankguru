@@ -1,10 +1,10 @@
-package pageObject.nopCommerce;
+package pageObject.user.nopCommerce;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
 import commons.BasePageUI;
-import pageUIs.nopCommerce.SearchPageUI;
+import pageUIs.user.nopCommerce.SearchPageUI;
 
 public class SearchPageObject extends BasePage{
 

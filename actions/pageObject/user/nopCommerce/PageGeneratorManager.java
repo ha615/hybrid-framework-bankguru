@@ -1,6 +1,8 @@
-package pageObject.nopCommerce;
+package pageObject.user.nopCommerce;
 
 import org.openqa.selenium.WebDriver;
+
+import pageObject.admin.nopCommerce.DashboardPageObject;
 
 public class PageGeneratorManager {
 	private static HomePageObject homePage;
@@ -10,6 +12,7 @@ public class PageGeneratorManager {
 	private static OrderPageObject orderPage;
 	private static MyAccountPageObject myAccountPage;
 	private static ShoppingCartObject shoppingCart;
+	private static DashboardPageObject dashboardPage;
 	
 	public static HomePageObject getHomePape(WebDriver driver) {
 		if(homePage == null) {
@@ -58,6 +61,12 @@ public class PageGeneratorManager {
 			shoppingCart = new ShoppingCartObject(driver);
 		}
 		return shoppingCart;
+	}
+
+	public static DashboardPageObject getDashboardPage(WebDriver driver) {
+		if(dashboardPage == null)
+			dashboardPage = new DashboardPageObject(driver);
+		return dashboardPage;
 	}
 	
 }

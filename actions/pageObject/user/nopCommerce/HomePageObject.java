@@ -1,9 +1,9 @@
-package pageObject.nopCommerce;
+package pageObject.user.nopCommerce;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import pageUIs.nopCommerce.HomePageUI;
+import pageUIs.user.nopCommerce.HomePageUI;
 
 public class HomePageObject extends BasePage {
 
@@ -30,5 +30,7 @@ public class HomePageObject extends BasePage {
 		return PageGeneratorManager.getLoginPage(driver);
 		
 	}
+
+
 
 }

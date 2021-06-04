@@ -11,9 +11,9 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import pageObject.nopCommerce.HomePageObject;
-import pageObject.nopCommerce.LoginPageObject;
-import pageObject.nopCommerce.RegisterPageObject;
+import pageObject.user.nopCommerce.HomePageObject;
+import pageObject.user.nopCommerce.LoginPageObject;
+import pageObject.user.nopCommerce.RegisterPageObject;
 
 
 
