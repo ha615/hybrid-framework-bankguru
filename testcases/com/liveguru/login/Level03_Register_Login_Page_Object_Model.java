@@ -38,7 +38,7 @@ public class Level03_Register_Login_Page_Object_Model {
 	
 	@Test
 	public void TC_02_Login_With_Invalid_Email() {
-		loginPage.refreshPage(driver);
+		loginPage.refreshCurrentPage(driver);
 		loginPage = new LoginPageObject(driver);
 		loginPage.enterEmailAddressTextbox("3321@345667");
 		loginPage.enterPasswordTextbox("123123");
@@ -48,7 +48,7 @@ public class Level03_Register_Login_Page_Object_Model {
 	
 	@Test
 	public void TC_03_Login_With_Invalid_Password() {
-		loginPage.refreshPage(driver);
+		loginPage.refreshCurrentPage(driver);
 		loginPage = new LoginPageObject(driver);
 		loginPage.loginToSystem("3321@345667.com", "1231");
 		Assert.assertEquals(loginPage.getMessageWarningInValidPassword(), "Please enter 6 or more characters without leading or trailing spaces.");
@@ -56,7 +56,7 @@ public class Level03_Register_Login_Page_Object_Model {
 	
 	@Test
 	public void TC_04_Login_With_Incorrect_Email() {
-		loginPage.refreshPage(driver);
+		loginPage.refreshCurrentPage(driver);
 		loginPage = new LoginPageObject(driver);
 		loginPage.loginToSystem("zinzin@hotmail.com","123123");
 		Assert.assertEquals(loginPage.getMessageWarningInCorrectEmail(), "Invalid login or password.");
@@ -66,7 +66,7 @@ public class Level03_Register_Login_Page_Object_Model {
 	@Test
 	public void TC_05_Login_With_Incorrect_Password() {
 		
-		loginPage.refreshPage(driver);
+		loginPage.refreshCurrentPage(driver);
 		loginPage = new LoginPageObject(driver);
 		loginPage.enterEmailAddressTextbox("zinzin@hotmail.com");
 		loginPage.enterPasswordTextbox("123123");
@@ -76,7 +76,7 @@ public class Level03_Register_Login_Page_Object_Model {
 	
 	@Test
 	public void TC_06_Login_With_Valid_Email_And_Password() {
-		loginPage.refreshPage(driver);
+		loginPage.refreshCurrentPage(driver);
 		loginPage = new LoginPageObject(driver);
 		loginPage.enterEmailAddressTextbox("dam@gmail.com");
 		loginPage.enterPasswordTextbox("123123");

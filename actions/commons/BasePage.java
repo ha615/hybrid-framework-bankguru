@@ -60,7 +60,7 @@ public class BasePage {
 		driver.navigate().forward();
 	}
 
-	public void refreshPage(WebDriver driver) {
+	public void refreshCurrentPage(WebDriver driver) {
 		driver.navigate().refresh();
 	}
 
@@ -178,7 +178,11 @@ public class BasePage {
 	public int getElementsSize(WebDriver driver, String locator) {
 		return getElements(driver, locator).size();
 	}
-
+	
+	public int getElementsSize(WebDriver driver, String locator, String...params) {
+		locator = getLocatorDynamic(locator, params);
+		return getElements(driver, locator).size();
+	}
 	public String getElementAttribute(WebDriver driver, String locator, String attributeName) {
 		return getElement(driver, locator).getAttribute(attributeName);
 	}
@@ -277,6 +281,11 @@ public class BasePage {
 	public void pressKeyToElement(WebDriver driver, String locator, Keys key) {
 		action = new Actions(driver);
 		action.sendKeys(getElement(driver, locator), key).perform();
+	}
+	
+	public void pressKeyToElement(WebDriver driver, String locator, Keys key, String...params) {
+		action = new Actions(driver);
+		action.sendKeys(getElement(driver, locator, params), key).perform();
 	}
 
 	public Object executeForBrowser(WebDriver driver, String javaScript) {
