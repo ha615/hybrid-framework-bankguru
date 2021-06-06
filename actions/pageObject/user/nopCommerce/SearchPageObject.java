@@ -3,7 +3,7 @@ package pageObject.user.nopCommerce;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import commons.BasePageUI;
+import commons.UserBasePageUI;
 import pageUIs.user.nopCommerce.SearchPageUI;
 
 public class SearchPageObject extends BasePage{
@@ -14,7 +14,7 @@ public class SearchPageObject extends BasePage{
 	}
 	public boolean isSearchPageDisplayed() {
 		// TODO Auto-generated method stub
-		return isElementDisplayed(driver, BasePageUI.DYNAMIC_LOCATOR_FOOTER,"Search");
+		return isElementDisplayed(driver, UserBasePageUI.DYNAMIC_LOCATOR_FOOTER,"Search");
 	}
 
 

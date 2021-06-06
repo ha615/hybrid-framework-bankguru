@@ -3,7 +3,7 @@ package pageObject.user.nopCommerce;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import commons.BasePageUI;
+import commons.UserBasePageUI;
 
 public class MyAccountPageObject extends BasePage{
 	WebDriver driver;
@@ -12,7 +12,7 @@ public class MyAccountPageObject extends BasePage{
 	}
 	public boolean isMyAccountPageDisplayed() {
 		// TODO Auto-generated method stub
-		return isElementDisplayed(driver, BasePageUI.DYNAMIC_LOCATOR_FOOTER,"My account");
+		return isElementDisplayed(driver, UserBasePageUI.DYNAMIC_LOCATOR_FOOTER,"My account");
 	}
 	
 
