@@ -1,7 +1,9 @@
 package commons;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -87,7 +89,7 @@ public class BasePage {
 	}
 
 	public Alert waitAlertPresence(WebDriver driver) {
-		explicitWait = new WebDriverWait(driver, timeouts);
+		explicitWait = new WebDriverWait(driver, longTimeOut);
 		return explicitWait.until(ExpectedConditions.alertIsPresent());
 	}
 
@@ -230,14 +232,50 @@ public class BasePage {
 	}
 
 	public boolean isElementDisplayed(WebDriver driver, String locator) {
-		return getElement(driver, locator).isDisplayed();
+		try {
+			//element visible on UI and in DOM
+			//element invisible on UI and in DOM
+			return getElement(driver, locator).isDisplayed();
+		} catch (Exception e) {
+			//element invisible on UI and not in ODM
+			e.printStackTrace();
+			return false;
+		}
 	}
 	
 	public boolean isElementDisplayed(WebDriver driver, String locator, String...params) {
 		locator = getDynamicLocator(locator, params);
 		return getElement(driver, locator).isDisplayed();
 	}
+	
+	public boolean isElementUndisplayed(WebDriver driver, String locator) {
+		System.out.println("Start time: " + new Date().toString());
+		overrideGlobalTimeouts(driver, shortTimeOut);
+		List<WebElement> elements = getElements(driver, locator);
+		overrideGlobalTimeouts(driver, longTimeOut);
 
+		if(elements.size() == 0) {
+			System.out.println("Element invisible DOM and undisplayed on UI ");
+			System.out.println("End time: " + new Date().toString());
+			return true;
+		}
+		else if (elements.size() > 0 && elements.get(0).isDisplayed() == false) {
+			System.out.println("Element visible DOM and undisplayed on UI ");
+			System.out.println("End time: " + new Date().toString());
+			return true;
+		}
+		else {
+			System.out.println("Element visible DOM and displayed on UI");
+			System.out.println("End time: " + new Date().toString());
+			return false;
+		}
+			
+	}
+	
+	public void overrideGlobalTimeouts(WebDriver driver, long timeouts) {
+		driver.manage().timeouts().implicitlyWait(timeouts, TimeUnit.SECONDS);
+	}
+	
 	public boolean isElementSelected(WebDriver driver, String locator, String...params) {
 		locator = getDynamicLocator(locator, params);
 		return getElement(driver, locator).isSelected();
@@ -369,7 +407,7 @@ public class BasePage {
 	}
 
 	public boolean areJQueryAndJSLoadedSuccess(WebDriver driver) {
-		explicitWait = new WebDriverWait(driver, timeouts);
+		explicitWait = new WebDriverWait(driver, longTimeOut);
 		jsExecutor = (JavascriptExecutor) driver;
 
 		ExpectedCondition<Boolean> jQueryLoad = new ExpectedCondition<Boolean>() {
@@ -411,46 +449,51 @@ public class BasePage {
 	}
 
 	public void waitForElementVisible(WebDriver driver, String locator) {
-		explicitWait = new WebDriverWait(driver, timeouts);
+		explicitWait = new WebDriverWait(driver, longTimeOut);
 		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(getByXpath(locator)));
 	}
 	
 	public void waitForElementVisible(WebDriver driver, String locator, String...params) {
 		locator = getDynamicLocator(locator, params);
-		explicitWait = new WebDriverWait(driver, timeouts);
+		explicitWait = new WebDriverWait(driver, longTimeOut);
 		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(getByXpath(locator)));
+	}
+
+	public void waitForElementInvisible(WebDriver driver, String locator) {
+		explicitWait = new WebDriverWait(driver, shortTimeOut);
+		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByXpath(locator)));
 	}
 	
 	public void waitAllElementVisible(WebDriver driver, String locator) {
-		explicitWait = new WebDriverWait(driver, timeouts);
+		explicitWait = new WebDriverWait(driver, longTimeOut);
 		explicitWait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(getByXpath(locator)));
 	}
 	
 	public void waitAllElementVisible(WebDriver driver, String locator, String...params) {
 		locator = getDynamicLocator(locator, params);
-		explicitWait = new WebDriverWait(driver, timeouts);
+		explicitWait = new WebDriverWait(driver, longTimeOut);
 		explicitWait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(getByXpath(locator)));
 	}
 	
 	public void waitForElementClickable(WebDriver driver, String locator) {
-		explicitWait = new WebDriverWait(driver, timeouts);
+		explicitWait = new WebDriverWait(driver, longTimeOut);
 		explicitWait.until(ExpectedConditions.elementToBeClickable(getByXpath(locator)));
 	}
 	
 	public void waitForElementClickable(WebDriver driver, String locator, String...params) {
 		locator = getDynamicLocator(locator, params);
-		explicitWait = new WebDriverWait(driver, timeouts);
+		explicitWait = new WebDriverWait(driver, longTimeOut);
 		explicitWait.until(ExpectedConditions.elementToBeClickable(getByXpath(locator)));
 	}
 	
 	public void waitElementInvisible(WebDriver driver, String locator) {
-		explicitWait = new WebDriverWait(driver, timeouts);
+		explicitWait = new WebDriverWait(driver, longTimeOut);
 		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByXpath(locator)));
 	}
 	
 	public void waitElementInvisible(WebDriver driver, String locator, String...params) {
 		locator = getDynamicLocator(locator, params);
-		explicitWait = new WebDriverWait(driver, timeouts);
+		explicitWait = new WebDriverWait(driver, longTimeOut);
 		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByXpath(locator)));
 	}
 	//USER
@@ -520,7 +563,8 @@ public class BasePage {
 	}
 	private Alert alert;
 	private WebDriverWait explicitWait;
-	private long timeouts = 30;
+	private long shortTimeOut = GlobalContants.SHORT_TIME;
+	private long longTimeOut = GlobalContants.LONG_TIME;
 	private Select select;
 	private Actions action;
 	private JavascriptExecutor jsExecutor;

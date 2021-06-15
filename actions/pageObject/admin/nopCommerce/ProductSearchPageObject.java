@@ -30,14 +30,15 @@ public class ProductSearchPageObject extends BasePage {
 		return PageGeneratorManager.getProductDetailPage(driver);
 	}
 
-	public boolean isSuccessMessagerDisplayed(String string) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean isSuccessMessagerDisplayed(String value) {
+		waitForElementVisible(driver, ProductSearchPageUI.SUCCESS_MESSAGE, value);
+		return isElementDisplayed(driver, ProductSearchPageUI.SUCCESS_MESSAGE, value);
 	}
 
-	public boolean isPictureImageUpdated(String string, String string2) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean isPictureImageUpdated(String imgProduct, String productName) {
+		//productName = productName.replace((" "), ("-")).toLowerCase();
+		waitForElementVisible(driver, ProductSearchPageUI.PRODUCT_IMAGE_BY_NAME, productName,imgProduct);
+		return isElementDisplayed(driver, ProductSearchPageUI.PRODUCT_IMAGE_BY_NAME, productName,imgProduct);
 	}
 
 }

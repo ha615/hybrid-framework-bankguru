@@ -41,9 +41,9 @@ public class ProductDetailPageObject extends BasePage {
 		sendKeyToElement(driver, ProductDetailPageUI.TITLE_TEXTBOX, value);		
 	}
 
-	public void enterToDisplayedOrderTextbox(String value) {
-		waitForElementVisible(driver, ProductDetailPageUI.DISPLAY_ORDER_TEXTBOX);
-		sendKeyToElement(driver, ProductDetailPageUI.DISPLAY_ORDER_TEXTBOX, value);			
+	public void clickToDisplayedOrderTextbox(String upDownText) {
+		waitForElementVisible(driver, ProductDetailPageUI.DISPLAY_ORDER_UP_DOWN_ICON, upDownText);
+		clickToElement(driver, ProductDetailPageUI.DISPLAY_ORDER_UP_DOWN_ICON, upDownText);			
 	}
 
 	public void clickToAdProductPictureButton() {
@@ -60,18 +60,21 @@ public class ProductDetailPageObject extends BasePage {
 	}
 
 	public ProductSearchPageObject clickToSaveButton() {
-		// TODO Auto-generated method stub
-		return null;
+		waitForElementClickable(driver, ProductDetailPageUI.SAVE_BUTTON);
+		clickToElement(driver, ProductDetailPageUI.SAVE_BUTTON);
+		return PageGeneratorManager.getProductSearchPage(driver);
 	}
 
-	public void clickToDeleteButtonAtPictureName() {
-		// TODO Auto-generated method stub
-		
+	public void clickToDeleteButtonAtPictureName(String titleProduct) {
+		//imgProductText = imgProductText.replace((" "), ("-")).toLowerCase();
+		waitForElementVisible(driver, ProductDetailPageUI.DELETE_BUTTON_BY_IMAGE_PRODUCT, titleProduct);
+		clickToElement(driver, ProductDetailPageUI.DELETE_BUTTON_BY_IMAGE_PRODUCT, titleProduct);
+		acceptAlert(driver);
 	}
 
-	public boolean isSuccessMessagerDisplayed(String string) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean isSuccessMessagerDisplayedByTable(String messageTable) {
+		waitForElementVisible(driver, ProductDetailPageUI.MESSAGE_DISPLAYED_BY_TABLE, messageTable);
+		return isElementDisplayed(driver, ProductDetailPageUI.MESSAGE_DISPLAYED_BY_TABLE, messageTable);
 	}
 
 }

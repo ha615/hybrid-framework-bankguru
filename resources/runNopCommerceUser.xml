@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="NopCommerce" parallel="false">
-<!-- 	<parameter name="url" value="https://demo.nopcommerce.com/" /> -->
+<suite name="User - NopCommerce" parallel="false">
+	<listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+	</listeners>
 	<parameter name="url" value="https://demo.nopcommerce.com/" />
 
 <!-- 	<test name="Run on FIREFOX"> -->
@@ -13,11 +16,12 @@
 	<test name="Run on CHROME">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.nopcommerce.login.Level04_Register_Login_Multiple_Browser" />
-			<class name="com.nopcommerce.login.Level05_Register_Login_Page_Factory" />
-			<class name="com.nopcommerce.login.Level06_Register_Login_Page_Generator" />
-			<class name="com.nopcommerce.login.Level07_Register_Login_Page_Switch_Page" />
-			<class name="com.nopcommerce.login.Level08_Register_Login_Switch_Page_Use_Dynamic_Locator" />
+<!-- 			<class name="com.nopcommerce.login.Level04_Register_Login_Multiple_Browser" /> -->
+<!-- 			<class name="com.nopcommerce.login.Level05_Register_Login_Page_Factory" /> -->
+<!-- 			<class name="com.nopcommerce.login.Level06_Register_Login_Page_Generator" /> -->
+<!-- 			<class name="com.nopcommerce.login.Level07_Register_Login_Page_Switch_Page" /> -->
+<!-- 			<class name="com.nopcommerce.login.Level08_Register_Login_Switch_Page_Use_Dynamic_Locator" /> -->
+			<class name="com.nopcommerce.login.Level13_Register_Login_Log_Report" />
 		</classes>
 	</test>
 </suite> <!---->

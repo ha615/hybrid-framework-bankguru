@@ -3,6 +3,8 @@ package commons;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -12,7 +14,11 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 	private WebDriver driver;
+	protected final Log log;	
 	
+	protected BaseTest() {
+		log = LogFactory.getLog(getClass());
+	}
 	//private String localPath = System.getProperty("user.dir");
 	
 	private enum BROWSERS{
@@ -68,7 +74,7 @@ public class BaseTest {
 			throw new RuntimeException("Browser InValid");
 		}
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get(appUrl);
 		return driver;
 	}
