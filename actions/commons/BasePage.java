@@ -126,7 +126,7 @@ public class BasePage {
 		}
 	}
 
-	private void sleepSecond(long time) {
+	protected void sleepSecond(long time) {
 
 		// TODO Auto-generated method stub
 		try {

@@ -56,7 +56,7 @@ public class BaseTest {
 	protected WebDriver getBrowserDriver(String browserName, String appUrl) {
 		if(browserName.equals("firefox")) {
 			//System.setProperty("webdriver.gecko.driver", localPath + "\\browserDrivers\\geckodriver.exe");
-			WebDriverManager.firefoxdriver().setup();
+			WebDriverManager.firefoxdriver().driverVersion("47").setup();;
 			driver = new FirefoxDriver();
 		}
 		else if(browserName.equalsIgnoreCase("chrome")){

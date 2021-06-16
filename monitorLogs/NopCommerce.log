@@ -176,3 +176,322 @@
 [INFO ] [2021-06-15 16:28:22,882] User_02_Login - Step 04: click to Login button
 [INFO ] [2021-06-15 16:28:24,638] User_02_Login - Step 05: Verify Home Page is displayed
 [INFO ] [2021-06-15 16:28:24,706] Post Condition: Close browser
+[INFO ] [2021-06-16 14:19:16,258] Pre-Condition: Open browser: 'chrome' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 14:19:24,933] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-06-16 14:19:24,963] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-06-16 14:19:29,840] User_01_Register - Step 03: Click To Gender Radio Button
+[INFO ] [2021-06-16 14:19:29,907] User_01_Register - Step 04: Enter Frist Name Textbox
+[INFO ] [2021-06-16 14:19:30,022] User_01_Register - Step 05: Enter Last Name Textbox
+[INFO ] [2021-06-16 14:19:30,113] User_01_Register - Step 06: Enter Email textbox with value: zinzin9149@hotmail.com
+[INFO ] [2021-06-16 14:19:30,252] User_01_Register - Step 07: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 14:19:30,346] User_01_Register - Step 08: Enter Confirm Password Textbox with value: 123123
+[INFO ] [2021-06-16 14:19:30,436] User_01_Register - Step 09: Click To Register Button
+[INFO ] [2021-06-16 14:19:32,744] User_01_Register - Step 10: Verify User Created Success Message
+[INFO ] [2021-06-16 14:19:32,844] User_01_Register - Step 11: click to Logout link
+[INFO ] [2021-06-16 14:19:38,175] User_01_Register - Step 12: Verify Home page is Displayed
+[INFO ] [2021-06-16 14:19:38,229] User_02_Login - Step 01: Click To Login link
+[INFO ] [2021-06-16 14:19:39,240] User_02_Login - Step 02: Enter Email textbox with value: zinzin9149@hotmail.com
+[INFO ] [2021-06-16 14:19:39,331] User_02_Login - Step 03: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 14:19:39,417] User_02_Login - Step 04: click to Login button
+[INFO ] [2021-06-16 14:19:41,726] User_02_Login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-06-16 14:19:41,762] Post Condition: Close browser
+[INFO ] [2021-06-16 14:23:28,421] Pre-Condition: Open browser: 'firefox' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 14:24:34,580] Pre-Condition: Open browser: 'chrome' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 14:24:39,895] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-06-16 14:24:39,920] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-06-16 14:24:44,372] User_01_Register - Step 03: Click To Gender Radio Button
+[INFO ] [2021-06-16 14:24:44,449] User_01_Register - Step 04: Enter Frist Name Textbox
+[INFO ] [2021-06-16 14:24:44,541] User_01_Register - Step 05: Enter Last Name Textbox
+[INFO ] [2021-06-16 14:24:44,633] User_01_Register - Step 06: Enter Email textbox with value: zinzin4036@hotmail.com
+[INFO ] [2021-06-16 14:24:44,757] User_01_Register - Step 07: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 14:24:44,848] User_01_Register - Step 08: Enter Confirm Password Textbox with value: 123123
+[INFO ] [2021-06-16 14:24:44,957] User_01_Register - Step 09: Click To Register Button
+[INFO ] [2021-06-16 14:24:46,419] User_01_Register - Step 10: Verify User Created Success Message
+[INFO ] [2021-06-16 14:24:46,466] User_01_Register - Step 11: click to Logout link
+[INFO ] [2021-06-16 14:24:51,664] User_01_Register - Step 12: Verify Home page is Displayed
+[INFO ] [2021-06-16 14:24:51,724] User_02_Login - Step 01: Click To Login link
+[INFO ] [2021-06-16 14:24:52,821] User_02_Login - Step 02: Enter Email textbox with value: zinzin4036@hotmail.com
+[INFO ] [2021-06-16 14:24:52,926] User_02_Login - Step 03: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 14:24:53,007] User_02_Login - Step 04: click to Login button
+[INFO ] [2021-06-16 14:24:55,246] User_02_Login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-06-16 14:24:55,280] Post Condition: Close browser
+[INFO ] [2021-06-16 14:27:59,627] Pre-Condition: Open browser: 'firefox' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 14:28:23,733] Pre-Condition: Open browser: 'chrome' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 14:28:29,016] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-06-16 14:28:29,041] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-06-16 14:28:33,494] User_01_Register - Step 03: Click To Gender Radio Button
+[INFO ] [2021-06-16 14:28:33,624] User_01_Register - Step 04: Enter Frist Name Textbox
+[INFO ] [2021-06-16 14:28:33,758] User_01_Register - Step 05: Enter Last Name Textbox
+[INFO ] [2021-06-16 14:28:33,843] User_01_Register - Step 06: Enter Email textbox with value: zinzin3209@hotmail.com
+[INFO ] [2021-06-16 14:28:33,950] User_01_Register - Step 07: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 14:28:34,047] User_01_Register - Step 08: Enter Confirm Password Textbox with value: 123123
+[INFO ] [2021-06-16 14:28:34,137] User_01_Register - Step 09: Click To Register Button
+[INFO ] [2021-06-16 14:28:36,181] User_01_Register - Step 10: Verify User Created Success Message
+[INFO ] [2021-06-16 14:28:36,234] User_01_Register - Step 11: click to Logout link
+[INFO ] [2021-06-16 14:28:41,476] User_01_Register - Step 12: Verify Home page is Displayed
+[INFO ] [2021-06-16 14:28:41,537] User_02_Login - Step 01: Click To Login link
+[INFO ] [2021-06-16 14:28:42,647] User_02_Login - Step 02: Enter Email textbox with value: zinzin3209@hotmail.com
+[INFO ] [2021-06-16 14:28:42,742] User_02_Login - Step 03: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 14:28:42,822] User_02_Login - Step 04: click to Login button
+[INFO ] [2021-06-16 14:28:44,216] User_02_Login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-06-16 14:28:44,247] Post Condition: Close browser
+[INFO ] [2021-06-16 14:29:13,182] Pre-Condition: Open browser: 'firefox' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 14:29:32,849] Pre-Condition: Open browser: 'chrome' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 14:29:37,560] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-06-16 14:29:37,613] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-06-16 14:29:42,060] User_01_Register - Step 03: Click To Gender Radio Button
+[INFO ] [2021-06-16 14:29:42,129] User_01_Register - Step 04: Enter Frist Name Textbox
+[INFO ] [2021-06-16 14:29:42,224] User_01_Register - Step 05: Enter Last Name Textbox
+[INFO ] [2021-06-16 14:29:42,315] User_01_Register - Step 06: Enter Email textbox with value: zinzin2560@hotmail.com
+[INFO ] [2021-06-16 14:29:42,435] User_01_Register - Step 07: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 14:29:42,530] User_01_Register - Step 08: Enter Confirm Password Textbox with value: 123123
+[INFO ] [2021-06-16 14:29:42,627] User_01_Register - Step 09: Click To Register Button
+[INFO ] [2021-06-16 14:29:44,826] User_01_Register - Step 10: Verify User Created Success Message
+[INFO ] [2021-06-16 14:29:44,890] User_01_Register - Step 11: click to Logout link
+[INFO ] [2021-06-16 14:29:50,149] User_01_Register - Step 12: Verify Home page is Displayed
+[INFO ] [2021-06-16 14:29:50,229] User_02_Login - Step 01: Click To Login link
+[INFO ] [2021-06-16 14:29:50,705] User_02_Login - Step 02: Enter Email textbox with value: zinzin2560@hotmail.com
+[INFO ] [2021-06-16 14:29:50,804] User_02_Login - Step 03: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 14:29:50,888] User_02_Login - Step 04: click to Login button
+[INFO ] [2021-06-16 14:29:52,550] User_02_Login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-06-16 14:29:52,583] Post Condition: Close browser
+[INFO ] [2021-06-16 14:50:56,284] Pre-Condition: Open browser: 'firefox' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 14:51:08,657] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-06-16 14:51:08,703] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-06-16 14:51:13,207] User_01_Register - Step 03: Click To Gender Radio Button
+[INFO ] [2021-06-16 14:51:13,478] User_01_Register - Step 04: Enter Frist Name Textbox
+[INFO ] [2021-06-16 14:51:13,555] User_01_Register - Step 05: Enter Last Name Textbox
+[INFO ] [2021-06-16 14:51:13,594] User_01_Register - Step 06: Enter Email textbox with value: zinzin7758@hotmail.com
+[INFO ] [2021-06-16 14:51:13,641] User_01_Register - Step 07: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 14:51:13,676] User_01_Register - Step 08: Enter Confirm Password Textbox with value: 123123
+[INFO ] [2021-06-16 14:51:13,717] User_01_Register - Step 09: Click To Register Button
+[INFO ] [2021-06-16 14:51:15,904] User_01_Register - Step 10: Verify User Created Success Message
+[INFO ] [2021-06-16 14:51:16,002] User_01_Register - Step 11: click to Logout link
+[INFO ] [2021-06-16 14:51:20,418] User_01_Register - Step 12: Verify Home page is Displayed
+[INFO ] [2021-06-16 14:51:20,466] User_02_Login - Step 01: Click To Login link
+[INFO ] [2021-06-16 14:51:20,944] User_02_Login - Step 02: Enter Email textbox with value: zinzin7758@hotmail.com
+[INFO ] [2021-06-16 14:51:20,996] User_02_Login - Step 03: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 14:51:21,035] User_02_Login - Step 04: click to Login button
+[INFO ] [2021-06-16 14:51:23,236] User_02_Login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-06-16 14:51:23,388] Post Condition: Close browser
+[INFO ] [2021-06-16 14:51:24,822] Pre-Condition: Open browser: 'chrome' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 14:51:30,473] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-06-16 14:51:30,473] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-06-16 14:51:34,860] User_01_Register - Step 03: Click To Gender Radio Button
+[INFO ] [2021-06-16 14:51:34,924] User_01_Register - Step 04: Enter Frist Name Textbox
+[INFO ] [2021-06-16 14:51:35,029] User_01_Register - Step 05: Enter Last Name Textbox
+[INFO ] [2021-06-16 14:51:35,133] User_01_Register - Step 06: Enter Email textbox with value: zinzin6164@hotmail.com
+[INFO ] [2021-06-16 14:51:35,247] User_01_Register - Step 07: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 14:51:35,331] User_01_Register - Step 08: Enter Confirm Password Textbox with value: 123123
+[INFO ] [2021-06-16 14:51:35,422] User_01_Register - Step 09: Click To Register Button
+[INFO ] [2021-06-16 14:51:37,488] User_01_Register - Step 10: Verify User Created Success Message
+[INFO ] [2021-06-16 14:51:37,521] User_01_Register - Step 11: click to Logout link
+[INFO ] [2021-06-16 14:51:42,039] User_01_Register - Step 12: Verify Home page is Displayed
+[INFO ] [2021-06-16 14:51:42,145] User_02_Login - Step 01: Click To Login link
+[INFO ] [2021-06-16 14:51:43,387] User_02_Login - Step 02: Enter Email textbox with value: zinzin6164@hotmail.com
+[INFO ] [2021-06-16 14:51:43,614] User_02_Login - Step 03: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 14:51:43,715] User_02_Login - Step 04: click to Login button
+[INFO ] [2021-06-16 14:51:44,500] User_02_Login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-06-16 14:51:44,529] Post Condition: Close browser
+[INFO ] [2021-06-16 16:45:04,543] Pre-Condition: Open browser: 'firefox' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 16:45:15,887] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-06-16 16:45:15,923] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-06-16 16:45:20,333] User_01_Register - Step 03: Click To Gender Radio Button
+[INFO ] [2021-06-16 16:45:20,586] User_01_Register - Step 04: Enter Frist Name Textbox
+[INFO ] [2021-06-16 16:45:20,637] User_01_Register - Step 05: Enter Last Name Textbox
+[INFO ] [2021-06-16 16:45:20,675] User_01_Register - Step 06: Enter Email textbox with value: zinzin2269@hotmail.com
+[INFO ] [2021-06-16 16:45:20,719] User_01_Register - Step 07: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 16:45:20,754] User_01_Register - Step 08: Enter Confirm Password Textbox with value: 123123
+[INFO ] [2021-06-16 16:45:20,787] User_01_Register - Step 09: Click To Register Button
+[INFO ] [2021-06-16 16:45:22,970] User_01_Register - Step 10: Verify User Created Success Message
+[INFO ] [2021-06-16 16:45:23,035] User_01_Register - Step 11: click to Logout link
+[INFO ] [2021-06-16 16:45:26,870] User_01_Register - Step 12: Verify Home page is Displayed
+[INFO ] [2021-06-16 16:45:26,978] User_02_Login - Step 01: Click To Login link
+[INFO ] [2021-06-16 16:45:27,927] User_02_Login - Step 02: Enter Email textbox with value: zinzin2269@hotmail.com
+[INFO ] [2021-06-16 16:45:28,011] User_02_Login - Step 03: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 16:45:28,055] User_02_Login - Step 04: click to Login button
+[INFO ] [2021-06-16 16:45:28,886] User_02_Login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-06-16 16:45:28,944] Post Condition: Close browser
+[INFO ] [2021-06-16 16:45:29,836] Pre-Condition: Open browser: 'edge' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 16:45:29,860] Pre-Condition: Open browser: 'chrome' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 16:45:35,791] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-06-16 16:45:35,792] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-06-16 16:45:40,493] User_01_Register - Step 03: Click To Gender Radio Button
+[INFO ] [2021-06-16 16:45:40,567] User_01_Register - Step 04: Enter Frist Name Textbox
+[INFO ] [2021-06-16 16:45:40,656] User_01_Register - Step 05: Enter Last Name Textbox
+[INFO ] [2021-06-16 16:45:40,742] User_01_Register - Step 06: Enter Email textbox with value: zinzin9090@hotmail.com
+[INFO ] [2021-06-16 16:45:40,845] User_01_Register - Step 07: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 16:45:40,936] User_01_Register - Step 08: Enter Confirm Password Textbox with value: 123123
+[INFO ] [2021-06-16 16:45:41,024] User_01_Register - Step 09: Click To Register Button
+[INFO ] [2021-06-16 16:45:42,862] User_01_Register - Step 10: Verify User Created Success Message
+[INFO ] [2021-06-16 16:45:42,893] User_01_Register - Step 11: click to Logout link
+[INFO ] [2021-06-16 16:45:47,582] User_01_Register - Step 12: Verify Home page is Displayed
+[INFO ] [2021-06-16 16:45:47,639] User_02_Login - Step 01: Click To Login link
+[INFO ] [2021-06-16 16:45:48,901] User_02_Login - Step 02: Enter Email textbox with value: zinzin9090@hotmail.com
+[INFO ] [2021-06-16 16:45:48,996] User_02_Login - Step 03: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 16:45:49,079] User_02_Login - Step 04: click to Login button
+[INFO ] [2021-06-16 16:45:50,894] User_02_Login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-06-16 16:45:50,921] Post Condition: Close browser
+[INFO ] [2021-06-16 16:46:55,770] Pre-Condition: Open browser: 'firefox' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 16:47:06,681] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-06-16 16:47:06,717] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-06-16 16:47:11,113] User_01_Register - Step 03: Click To Gender Radio Button
+[INFO ] [2021-06-16 16:47:11,362] User_01_Register - Step 04: Enter Frist Name Textbox
+[INFO ] [2021-06-16 16:47:11,422] User_01_Register - Step 05: Enter Last Name Textbox
+[INFO ] [2021-06-16 16:47:11,461] User_01_Register - Step 06: Enter Email textbox with value: zinzin7225@hotmail.com
+[INFO ] [2021-06-16 16:47:11,513] User_01_Register - Step 07: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 16:47:11,553] User_01_Register - Step 08: Enter Confirm Password Textbox with value: 123123
+[INFO ] [2021-06-16 16:47:11,590] User_01_Register - Step 09: Click To Register Button
+[INFO ] [2021-06-16 16:47:13,875] User_01_Register - Step 10: Verify User Created Success Message
+[INFO ] [2021-06-16 16:47:13,923] User_01_Register - Step 11: click to Logout link
+[INFO ] [2021-06-16 16:47:18,350] User_01_Register - Step 12: Verify Home page is Displayed
+[INFO ] [2021-06-16 16:47:18,415] User_02_Login - Step 01: Click To Login link
+[INFO ] [2021-06-16 16:47:19,103] User_02_Login - Step 02: Enter Email textbox with value: zinzin7225@hotmail.com
+[INFO ] [2021-06-16 16:47:19,162] User_02_Login - Step 03: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 16:47:19,200] User_02_Login - Step 04: click to Login button
+[INFO ] [2021-06-16 16:47:20,178] User_02_Login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-06-16 16:47:20,222] Post Condition: Close browser
+[INFO ] [2021-06-16 16:47:21,217] Pre-Condition: Open browser: 'edge_chromium' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 16:47:26,052] Pre-Condition: Open browser: 'chrome' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 16:47:30,729] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-06-16 16:47:30,729] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-06-16 16:47:35,137] User_01_Register - Step 03: Click To Gender Radio Button
+[INFO ] [2021-06-16 16:47:35,202] User_01_Register - Step 04: Enter Frist Name Textbox
+[INFO ] [2021-06-16 16:47:35,291] User_01_Register - Step 05: Enter Last Name Textbox
+[INFO ] [2021-06-16 16:47:35,383] User_01_Register - Step 06: Enter Email textbox with value: zinzin7087@hotmail.com
+[INFO ] [2021-06-16 16:47:35,490] User_01_Register - Step 07: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 16:47:35,578] User_01_Register - Step 08: Enter Confirm Password Textbox with value: 123123
+[INFO ] [2021-06-16 16:47:35,664] User_01_Register - Step 09: Click To Register Button
+[INFO ] [2021-06-16 16:47:37,285] User_01_Register - Step 10: Verify User Created Success Message
+[INFO ] [2021-06-16 16:47:37,318] User_01_Register - Step 11: click to Logout link
+[INFO ] [2021-06-16 16:47:42,040] User_01_Register - Step 12: Verify Home page is Displayed
+[INFO ] [2021-06-16 16:47:42,085] User_02_Login - Step 01: Click To Login link
+[INFO ] [2021-06-16 16:47:42,534] User_02_Login - Step 02: Enter Email textbox with value: zinzin7087@hotmail.com
+[INFO ] [2021-06-16 16:47:42,628] User_02_Login - Step 03: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 16:47:42,710] User_02_Login - Step 04: click to Login button
+[INFO ] [2021-06-16 16:47:45,366] User_02_Login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-06-16 16:47:45,390] Post Condition: Close browser
+[INFO ] [2021-06-16 16:53:56,787] Pre-Condition: Open browser: 'firefox' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 16:54:07,296] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-06-16 16:54:07,301] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-06-16 16:54:11,147] User_01_Register - Step 03: Click To Gender Radio Button
+[INFO ] [2021-06-16 16:54:11,454] User_01_Register - Step 04: Enter Frist Name Textbox
+[INFO ] [2021-06-16 16:54:11,542] User_01_Register - Step 05: Enter Last Name Textbox
+[INFO ] [2021-06-16 16:54:11,622] User_01_Register - Step 06: Enter Email textbox with value: zinzin4650@hotmail.com
+[INFO ] [2021-06-16 16:54:11,695] User_01_Register - Step 07: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 16:54:11,744] User_01_Register - Step 08: Enter Confirm Password Textbox with value: 123123
+[INFO ] [2021-06-16 16:54:11,795] User_01_Register - Step 09: Click To Register Button
+[INFO ] [2021-06-16 16:54:13,242] User_01_Register - Step 10: Verify User Created Success Message
+[INFO ] [2021-06-16 16:54:13,322] User_01_Register - Step 11: click to Logout link
+[INFO ] [2021-06-16 16:54:18,651] User_01_Register - Step 12: Verify Home page is Displayed
+[INFO ] [2021-06-16 16:54:18,745] User_02_Login - Step 01: Click To Login link
+[INFO ] [2021-06-16 16:54:19,942] User_02_Login - Step 02: Enter Email textbox with value: zinzin4650@hotmail.com
+[INFO ] [2021-06-16 16:54:20,025] User_02_Login - Step 03: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 16:54:20,081] User_02_Login - Step 04: click to Login button
+[INFO ] [2021-06-16 16:54:20,977] User_02_Login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-06-16 16:54:21,062] Post Condition: Close browser
+[INFO ] [2021-06-16 16:54:22,215] Pre-Condition: Open browser: 'edge_chromium' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 16:54:23,967] Pre-Condition: Open browser: 'chrome' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 16:54:29,100] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-06-16 16:54:29,100] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-06-16 16:54:33,836] User_01_Register - Step 03: Click To Gender Radio Button
+[INFO ] [2021-06-16 16:54:33,937] User_01_Register - Step 04: Enter Frist Name Textbox
+[INFO ] [2021-06-16 16:54:34,059] User_01_Register - Step 05: Enter Last Name Textbox
+[INFO ] [2021-06-16 16:54:34,163] User_01_Register - Step 06: Enter Email textbox with value: zinzin4525@hotmail.com
+[INFO ] [2021-06-16 16:54:34,296] User_01_Register - Step 07: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 16:54:34,406] User_01_Register - Step 08: Enter Confirm Password Textbox with value: 123123
+[INFO ] [2021-06-16 16:54:34,519] User_01_Register - Step 09: Click To Register Button
+[INFO ] [2021-06-16 16:54:36,646] User_01_Register - Step 10: Verify User Created Success Message
+[INFO ] [2021-06-16 16:54:36,688] User_01_Register - Step 11: click to Logout link
+[INFO ] [2021-06-16 16:54:41,185] User_01_Register - Step 12: Verify Home page is Displayed
+[INFO ] [2021-06-16 16:54:41,272] User_02_Login - Step 01: Click To Login link
+[INFO ] [2021-06-16 16:54:41,839] User_02_Login - Step 02: Enter Email textbox with value: zinzin4525@hotmail.com
+[INFO ] [2021-06-16 16:54:41,968] User_02_Login - Step 03: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 16:54:42,110] User_02_Login - Step 04: click to Login button
+[INFO ] [2021-06-16 16:54:43,824] User_02_Login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-06-16 16:54:43,881] Post Condition: Close browser
+[INFO ] [2021-06-16 17:03:20,562] Pre-Condition: Open browser: 'firefox' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 17:03:32,180] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-06-16 17:03:32,188] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-06-16 17:03:36,990] User_01_Register - Step 03: Click To Gender Radio Button
+[INFO ] [2021-06-16 17:03:37,267] User_01_Register - Step 04: Enter Frist Name Textbox
+[INFO ] [2021-06-16 17:03:37,360] User_01_Register - Step 05: Enter Last Name Textbox
+[INFO ] [2021-06-16 17:03:37,428] User_01_Register - Step 06: Enter Email textbox with value: zinzin3183@hotmail.com
+[INFO ] [2021-06-16 17:03:37,499] User_01_Register - Step 07: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 17:03:37,555] User_01_Register - Step 08: Enter Confirm Password Textbox with value: 123123
+[INFO ] [2021-06-16 17:03:37,633] User_01_Register - Step 09: Click To Register Button
+[INFO ] [2021-06-16 17:03:39,748] User_01_Register - Step 10: Verify User Created Success Message
+[INFO ] [2021-06-16 17:03:39,816] User_01_Register - Step 11: click to Logout link
+[INFO ] [2021-06-16 17:03:45,635] User_01_Register - Step 12: Verify Home page is Displayed
+[INFO ] [2021-06-16 17:03:45,716] User_02_Login - Step 01: Click To Login link
+[INFO ] [2021-06-16 17:03:47,022] User_02_Login - Step 02: Enter Email textbox with value: zinzin3183@hotmail.com
+[INFO ] [2021-06-16 17:03:47,097] User_02_Login - Step 03: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 17:03:47,154] User_02_Login - Step 04: click to Login button
+[INFO ] [2021-06-16 17:03:48,072] User_02_Login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-06-16 17:03:48,139] Post Condition: Close browser
+[INFO ] [2021-06-16 17:03:49,162] Pre-Condition: Open browser: 'edge_chromium' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 17:03:50,667] Pre-Condition: Open browser: 'chrome' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 17:03:55,453] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-06-16 17:03:55,453] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-06-16 17:03:59,869] User_01_Register - Step 03: Click To Gender Radio Button
+[INFO ] [2021-06-16 17:03:59,878] User_02_Login - Step 01: Click To Login link
+[INFO ] [2021-06-16 17:04:00,986] User_02_Login - Step 02: Enter Email textbox with value: zinzin60@hotmail.com
+[INFO ] [2021-06-16 17:04:00,988] Post Condition: Close browser
+[INFO ] [2021-06-16 17:06:26,091] Pre-Condition: Open browser: 'firefox' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 17:06:36,995] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-06-16 17:06:37,000] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-06-16 17:06:41,693] User_01_Register - Step 03: Click To Gender Radio Button
+[INFO ] [2021-06-16 17:06:41,962] User_01_Register - Step 04: Enter Frist Name Textbox
+[INFO ] [2021-06-16 17:06:42,042] User_01_Register - Step 05: Enter Last Name Textbox
+[INFO ] [2021-06-16 17:06:42,136] User_01_Register - Step 06: Enter Email textbox with value: zinzin189@hotmail.com
+[INFO ] [2021-06-16 17:06:42,240] User_01_Register - Step 07: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 17:06:42,300] User_01_Register - Step 08: Enter Confirm Password Textbox with value: 123123
+[INFO ] [2021-06-16 17:06:42,370] User_01_Register - Step 09: Click To Register Button
+[INFO ] [2021-06-16 17:06:44,256] User_01_Register - Step 10: Verify User Created Success Message
+[INFO ] [2021-06-16 17:06:44,311] User_01_Register - Step 11: click to Logout link
+[INFO ] [2021-06-16 17:06:48,641] User_01_Register - Step 12: Verify Home page is Displayed
+[INFO ] [2021-06-16 17:06:48,736] User_02_Login - Step 01: Click To Login link
+[INFO ] [2021-06-16 17:06:49,215] User_02_Login - Step 02: Enter Email textbox with value: zinzin189@hotmail.com
+[INFO ] [2021-06-16 17:06:49,290] User_02_Login - Step 03: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 17:06:49,348] User_02_Login - Step 04: click to Login button
+[INFO ] [2021-06-16 17:06:50,696] User_02_Login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-06-16 17:06:50,753] Post Condition: Close browser
+[INFO ] [2021-06-16 17:06:51,781] Pre-Condition: Open browser: 'edge_chromium' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 17:06:53,275] Pre-Condition: Open browser: 'chrome' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 17:06:57,813] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-06-16 17:06:57,814] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-06-16 17:07:02,425] User_01_Register - Step 03: Click To Gender Radio Button
+[INFO ] [2021-06-16 17:07:02,428] User_02_Login - Step 01: Click To Login link
+[INFO ] [2021-06-16 17:07:03,585] User_02_Login - Step 02: Enter Email textbox with value: zinzin3964@hotmail.com
+[INFO ] [2021-06-16 17:07:03,587] Post Condition: Close browser
+[INFO ] [2021-06-16 17:09:53,054] Pre-Condition: Open browser: 'firefox' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 17:10:04,666] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-06-16 17:10:04,671] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-06-16 17:10:34,261] User_02_Login - Step 01: Click To Login link
+[INFO ] [2021-06-16 17:10:42,864] Pre-Condition: Open browser: 'firefox' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 17:10:56,595] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-06-16 17:10:56,995] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-06-16 17:11:01,836] User_01_Register - Step 03: Click To Gender Radio Button
+[INFO ] [2021-06-16 17:11:02,105] User_01_Register - Step 04: Enter Frist Name Textbox
+[INFO ] [2021-06-16 17:11:02,189] User_01_Register - Step 05: Enter Last Name Textbox
+[INFO ] [2021-06-16 17:11:02,259] User_01_Register - Step 06: Enter Email textbox with value: zinzin6432@hotmail.com
+[INFO ] [2021-06-16 17:11:02,341] User_01_Register - Step 07: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 17:11:02,414] User_01_Register - Step 08: Enter Confirm Password Textbox with value: 123123
+[INFO ] [2021-06-16 17:11:02,480] User_01_Register - Step 09: Click To Register Button
+[INFO ] [2021-06-16 17:11:04,783] User_01_Register - Step 10: Verify User Created Success Message
+[INFO ] [2021-06-16 17:11:04,835] User_01_Register - Step 11: click to Logout link
+[INFO ] [2021-06-16 17:11:11,095] User_01_Register - Step 12: Verify Home page is Displayed
+[INFO ] [2021-06-16 17:11:11,178] User_02_Login - Step 01: Click To Login link
+[INFO ] [2021-06-16 17:11:12,195] User_02_Login - Step 02: Enter Email textbox with value: zinzin6432@hotmail.com
+[INFO ] [2021-06-16 17:11:12,286] User_02_Login - Step 03: Enter Password textbox with value: 123123
+[INFO ] [2021-06-16 17:11:12,355] User_02_Login - Step 04: click to Login button
+[INFO ] [2021-06-16 17:11:14,650] User_02_Login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-06-16 17:11:14,701] Post Condition: Close browser
+[INFO ] [2021-06-16 17:11:18,414] Pre-Condition: Open browser: 'edge_chromium' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 17:11:19,909] Pre-Condition: Open browser: 'chrome' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-16 17:11:26,165] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-06-16 17:11:26,165] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-06-16 17:11:30,615] User_01_Register - Step 03: Click To Gender Radio Button
+[INFO ] [2021-06-16 17:11:30,618] User_02_Login - Step 01: Click To Login link
+[INFO ] [2021-06-16 17:11:31,738] User_02_Login - Step 02: Enter Email textbox with value: zinzin594@hotmail.com
+[INFO ] [2021-06-16 17:11:31,741] Post Condition: Close browser
