@@ -1,42 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="User - NopCommerce" parallel="false">
+<!-- <suite name="User - NopCommerce" parallel="false"> -->
+<suite name="User - NopCommerce" parallel="tests" thread-count = "3">
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
-		<listener
-			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="reportConfig.ExtentReportListenerV2" />
 	</listeners>
 	<parameter name="url" value="https://demo.nopcommerce.com/" />
 
 	<test name="Run on FIREFOX">
 		<parameter name="browser" value="firefox" />
 		<classes>
-			<class
-				name="com.nopcommerce.login.Level13_Register_Login_Log_Report" />
+			<class name="com.nopcommerce.login.Level13_Register_Login_Log_Report" />
 		</classes>
 	</test>
 
-	<test name="Run on EDGE">
-		<parameter name="browser" value="edge_chromium" />
-		<classes>
-			<class
-				name="com.nopcommerce.login.Level13_Register_Login_Log_Report" />
-		</classes>
-	</test>
-	<test name="Run on CHROME">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<!-- <class name="com.nopcommerce.login.Level04_Register_Login_Multiple_Browser" 
-				/> -->
-			<!-- <class name="com.nopcommerce.login.Level05_Register_Login_Page_Factory" 
-				/> -->
-			<!-- <class name="com.nopcommerce.login.Level06_Register_Login_Page_Generator" 
-				/> -->
-			<!-- <class name="com.nopcommerce.login.Level07_Register_Login_Page_Switch_Page" 
-				/> -->
-			<!-- <class name="com.nopcommerce.login.Level08_Register_Login_Switch_Page_Use_Dynamic_Locator" 
-				/> -->
-			<class
-				name="com.nopcommerce.login.Level13_Register_Login_Log_Report" />
-		</classes>
-	</test>
+<!-- 	<test name="Run on EDGE"> -->
+<!-- 		<parameter name="browser" value="edge_chromium" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.nopcommerce.login.Level13_Register_Login_Log_Report" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+	
+<!-- 	<test name="Run on CHROME"> -->
+<!-- 		<parameter name="browser" value="chrome" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.nopcommerce.login.Level13_Register_Login_Log_Report" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
 </suite> <!---->
