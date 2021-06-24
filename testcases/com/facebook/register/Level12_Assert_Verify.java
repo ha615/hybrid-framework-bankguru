@@ -23,10 +23,23 @@ public class Level12_Assert_Verify extends BaseTest {
 	}
 
 	@Test
-	public void Register_01_Element_Displayed() {
+	public void Register_01_Assert() {
 		Assert.assertTrue(registerPage.isEmailTextboxDisplayed());
-		registerPage.enterEmailTextbox("zinzin@yahoo.com");
 		sleepInSecond(3);
+		Assert.assertTrue(registerPage.isConfirmEmailUnDisplayed());
+		registerPage.enterEmailTextbox("zinzin@yahoo.com");
+		Assert.assertFalse(registerPage.isEmailTextboxDisplayed());
+		Assert.assertTrue(registerPage.isEmailTextboxUnisplayed());
+	}
+	
+	@Test
+	public void Register_02_Verify() {
+		verifyTrue(registerPage.isEmailTextboxDisplayed());
+		sleepInSecond(3);
+		verifyFalse(registerPage.isConfirmEmailUnDisplayed());
+		registerPage.enterEmailTextbox("zinzin@yahoo.com");
+		verifyFalse(registerPage.isEmailTextboxDisplayed());
+		verifyTrue(registerPage.isEmailTextboxUnisplayed());
 	}
 	
 	@AfterClass

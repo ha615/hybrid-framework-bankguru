@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- <suite name="User - NopCommerce" parallel="false"> -->
-<suite name="User - NopCommerce" parallel="tests" thread-count = "3">
+<suite name="User - NopCommerce" parallel="false">
+<!-- <suite name="User - NopCommerce" parallel="tests" thread-count = "3"> -->
 	<listeners>
+		<listener class-name="commons.MethodListener" />
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 		<listener class-name="reportConfig.ExtentReportListenerV2" />

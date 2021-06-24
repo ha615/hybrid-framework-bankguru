@@ -843,3 +843,5 @@
 [INFO ] [2021-06-17 11:50:44,451] User_02_Login - Step 04: click to Login button
 [INFO ] [2021-06-17 11:50:47,237] User_02_Login - Step 05: Verify Home Page is displayed
 [INFO ] [2021-06-17 11:50:47,305] Post Condition: Close browser
+[INFO ] [2021-06-21 15:48:52,917] Pre-Condition: Open browser: 'chrome' and navigate to: 'https://opensource-demo.orangehrmlive.com/index.php/dashboard'
+[INFO ] [2021-06-21 15:48:59,300] Post Condition: Close browser

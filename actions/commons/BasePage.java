@@ -24,6 +24,7 @@ import pageObject.user.nopCommerce.OrderPageObject;
 import pageObject.user.nopCommerce.PageGeneratorManager;
 import pageObject.user.nopCommerce.RegisterPageObject;
 import pageObject.user.nopCommerce.SearchPageObject;
+import pageUIs.HRM.HRMAbstractPageUI;
 import pageUIs.admin.nopCommerce.DashboardPageUI;
 import pageUIs.user.nopCommerce.HomePageUI;
 import pageUIs.user.nopCommerce.MyAccountPageUI;
@@ -311,6 +312,13 @@ public class BasePage {
 		action = new Actions(driver);
 		action.moveToElement(getElement(driver, locator)).perform();
 	}
+	
+	public void hoverToElement(WebDriver driver, String locator, String ...params) {
+		action = new Actions(driver);
+		action.moveToElement(getElement(driver, locator, params)).perform();
+	}
+	
+	
 
 	public void rightClickToElement(WebDriver driver, String locator) {
 		action = new Actions(driver);
@@ -561,6 +569,18 @@ public class BasePage {
 		fullFileName = fullFileName.trim();
 		getElement(driver, AdminBasePageUI.UPLOAD_FILE_BY_CARD_NAME, cardName).sendKeys(fullFileName);;
 	}
+	
+	//HRM PROJECT
+	public void mouseHoverToMenu(WebDriver driver, String value) {
+		waitForElementVisible(driver, HRMAbstractPageUI.DYNAMIC_MENU_LINK, value);
+		hoverToElement(driver, HRMAbstractPageUI.DYNAMIC_MENU_LINK, value);
+	}
+	
+	public void openMenuPageByName(WebDriver driver, String menuName) {
+		waitForElementClickable(driver, HRMAbstractPageUI.DYNAMIC_MENU_LINK, menuName);
+		clickToElement(driver, HRMAbstractPageUI.DYNAMIC_MENU_LINK, menuName);
+	}
+	
 	private Alert alert;
 	private WebDriverWait explicitWait;
 	private long shortTimeOut = GlobalContants.SHORT_TIME;
