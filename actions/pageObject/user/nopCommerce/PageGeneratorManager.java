@@ -5,14 +5,14 @@ import org.openqa.selenium.WebDriver;
 import pageObject.admin.nopCommerce.DashboardPageObject;
 
 public class PageGeneratorManager {
-	private static HomePageObject homePage;
-	private static RegisterPageObject registerPage;
-	private static LoginPageObject loginPage;
-	private static SearchPageObject searchPage;
-	private static OrderPageObject orderPage;
-	private static MyAccountPageObject myAccountPage;
-	private static ShoppingCartObject shoppingCart;
-	private static DashboardPageObject dashboardPage;
+//	private static HomePageObject homePage;
+//	private static RegisterPageObject registerPage;
+//	private static LoginPageObject loginPage;
+//	private static SearchPageObject searchPage;
+//	private static OrderPageObject orderPage;
+//	private static MyAccountPageObject myAccountPage;
+//	private static ShoppingCartObject shoppingCart;
+//	private static DashboardPageObject dashboardPage;
 	
 	public static HomePageObject getHomePape(WebDriver driver) {
 //		if(homePage == null) {
