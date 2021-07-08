@@ -12,7 +12,6 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 public class TestListener implements ITestListener {
-	WebDriver driver;
 	String locatorPath = System.getProperty("user.dir") + "/screenShotIMG/";
 
 	@Override
@@ -33,16 +32,12 @@ public class TestListener implements ITestListener {
 	@Override
 	public void onTestFailure(ITestResult result) {
 		Object testClass = result.getInstance();
-		driver = ((TakeScreenshootTestForFailure)testClass).getWebDriver();
-		// Convert web driver object to TakeScreenshot
-		TakesScreenshot scrShot = ((TakesScreenshot) driver);
-		// Call getScreenshotAs method to create image file
-		File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
-		// Move image file to new destination
-		File DestFile = new File(locatorPath + result.getTestName() + ".png");
-		// Copy file at destination
+		WebDriver driver = ((TakeScreenShotForFailure) testClass).getDriver();
+		TakesScreenshot screenShot = (TakesScreenshot) driver;
+		File sourceFile = screenShot.getScreenshotAs(OutputType.FILE);
+		File destFile = new File(locatorPath + result.getName() + ".png");
 		try {
-			FileUtils.copyFile(SrcFile, DestFile);
+			FileUtils.copyFile(sourceFile, destFile);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

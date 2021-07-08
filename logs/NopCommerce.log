@@ -196,3 +196,195 @@
 [INFO ] [2021-06-25 06:42:02,809] User_02_Login - Step 05: Verify Home Page is displayed
 [INFO ] [2021-06-25 06:42:02,868] -------------------------- FAILED --------------------------
 [INFO ] [2021-06-25 06:42:02,869] Post Condition: Close browser
+[INFO ] [2021-06-28 15:52:07,510] Pre-Condition: Open browser: 'firefox' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-28 15:52:18,120] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-06-28 15:52:18,124] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-06-28 15:52:23,457] User_01_Register - Step 03: Click To Gender Radio Button
+[INFO ] [2021-06-28 15:52:23,738] User_01_Register - Step 04: Enter Frist Name Textbox
+[INFO ] [2021-06-28 15:52:23,816] User_01_Register - Step 05: Enter Last Name Textbox
+[INFO ] [2021-06-28 15:52:23,877] User_01_Register - Step 06: Enter Email textbox with value: zinzin914@yahoo.com
+[INFO ] [2021-06-28 15:52:23,953] User_01_Register - Step 07: Enter Password textbox with value: 123123
+[INFO ] [2021-06-28 15:52:24,022] User_01_Register - Step 08: Enter Confirm Password Textbox with value: 123123
+[INFO ] [2021-06-28 15:52:24,100] User_01_Register - Step 09: Click To Register Button
+[INFO ] [2021-06-28 15:52:26,623] User_01_Register - Step 10: Verify User Created Success Message
+[INFO ] [2021-06-28 15:52:26,678] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-28 15:52:26,680] User_01_Register - Step 11: click to Logout link
+[INFO ] [2021-06-28 15:52:31,377] User_01_Register - Step 12: Verify Home page is Displayed
+[INFO ] [2021-06-28 15:52:31,451] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 15:52:31,454] User_02_Login - Step 01: Click To Login link
+[INFO ] [2021-06-28 15:52:31,992] User_02_Login - Step 02: Enter Email textbox with value: zinzin914@yahoo.com
+[INFO ] [2021-06-28 15:52:32,067] User_02_Login - Step 03: Enter Password textbox with value: 123123
+[INFO ] [2021-06-28 15:52:32,127] User_02_Login - Step 04: click to Login button
+[INFO ] [2021-06-28 15:52:34,062] User_02_Login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-06-28 15:52:34,119] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-28 15:52:34,122] Post Condition: Close browser
+[INFO ] [2021-06-28 15:55:17,065] Pre-Condition: Open browser: 'firefox' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-28 15:55:27,021] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-06-28 15:55:27,026] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-06-28 15:55:31,807] User_01_Register - Step 03: Click To Gender Radio Button
+[INFO ] [2021-06-28 15:55:32,087] User_01_Register - Step 04: Enter Frist Name Textbox
+[INFO ] [2021-06-28 15:55:32,153] User_01_Register - Step 05: Enter Last Name Textbox
+[INFO ] [2021-06-28 15:55:32,221] User_01_Register - Step 06: Enter Email textbox with value: zinzin5483@yahoo.com
+[INFO ] [2021-06-28 15:55:32,290] User_01_Register - Step 07: Enter Password textbox with value: 123123
+[INFO ] [2021-06-28 15:55:32,350] User_01_Register - Step 08: Enter Confirm Password Textbox with value: 123123
+[INFO ] [2021-06-28 15:55:32,407] User_01_Register - Step 09: Click To Register Button
+[INFO ] [2021-06-28 15:55:34,159] User_01_Register - Step 10: Verify User Created Success Message
+[INFO ] [2021-06-28 16:01:37,206] Pre-Condition: Open browser: 'firefox' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-28 16:01:48,163] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-06-28 16:01:48,168] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-06-28 16:01:53,296] User_01_Register - Step 03: Click To Gender Radio Button
+[INFO ] [2021-06-28 16:01:53,553] User_01_Register - Step 04: Enter Frist Name Textbox
+[INFO ] [2021-06-28 16:01:53,619] User_01_Register - Step 05: Enter Last Name Textbox
+[INFO ] [2021-06-28 16:01:53,686] User_01_Register - Step 06: Enter Email textbox with value: zinzin9907@yahoo.com
+[INFO ] [2021-06-28 16:01:53,754] User_01_Register - Step 07: Enter Password textbox with value: 123123
+[INFO ] [2021-06-28 16:01:53,833] User_01_Register - Step 08: Enter Confirm Password Textbox with value: 123123
+[INFO ] [2021-06-28 16:01:53,891] User_01_Register - Step 09: Click To Register Button
+[INFO ] [2021-06-28 16:01:55,232] User_01_Register - Step 10: Verify User Created Success Message
+[INFO ] [2021-06-28 16:01:55,287] User_01_Register - Step 11: click to Logout link
+[INFO ] [2021-06-28 16:02:00,224] User_01_Register - Step 12: Verify Home page is Displayed
+[INFO ] [2021-06-28 16:02:00,294] User_02_Login - Step 01: Click To Login link
+[INFO ] [2021-06-28 16:02:01,287] User_02_Login - Step 02: Enter Email textbox with value: zinzin9907@yahoo.com
+[INFO ] [2021-06-28 16:02:01,360] User_02_Login - Step 03: Enter Password textbox with value: 123123
+[INFO ] [2021-06-28 16:02:01,425] User_02_Login - Step 04: click to Login button
+[INFO ] [2021-06-28 16:02:03,314] User_02_Login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-06-28 16:02:03,382] Post Condition: Close browser
+[INFO ] [2021-06-28 16:30:59,913] Pre-Condition: Open browser: 'firefox' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-28 16:31:11,744] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-06-28 16:31:11,762] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-06-28 16:31:16,509] User_01_Register - Step 03: Click To Gender Radio Button
+[INFO ] [2021-06-28 16:31:16,793] User_01_Register - Step 04: Enter Frist Name Textbox
+[INFO ] [2021-06-28 16:31:16,869] User_01_Register - Step 05: Enter Last Name Textbox
+[INFO ] [2021-06-28 16:31:16,939] User_01_Register - Step 06: Enter Email textbox with value: zinzin4105@yahoo.com
+[INFO ] [2021-06-28 16:31:17,013] User_01_Register - Step 07: Enter Password textbox with value: 123123
+[INFO ] [2021-06-28 16:31:17,073] User_01_Register - Step 08: Enter Confirm Password Textbox with value: 123123
+[INFO ] [2021-06-28 16:31:17,135] User_01_Register - Step 09: Click To Register Button
+[INFO ] [2021-06-28 16:31:19,690] User_01_Register - Step 10: Verify User Created Success Message
+[INFO ] [2021-06-28 16:31:19,745] User_01_Register - Step 11: click to Logout link
+[INFO ] [2021-06-28 16:31:25,384] User_01_Register - Step 12: Verify Home page is Displayed
+[INFO ] [2021-06-28 16:31:25,493] User_02_Login - Step 01: Click To Login link
+[INFO ] [2021-06-28 16:31:26,838] User_02_Login - Step 02: Enter Email textbox with value: zinzin4105@yahoo.com
+[INFO ] [2021-06-28 16:31:26,921] User_02_Login - Step 03: Enter Password textbox with value: 123123
+[INFO ] [2021-06-28 16:31:26,989] User_02_Login - Step 04: click to Login button
+[INFO ] [2021-06-28 16:31:27,867] User_02_Login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-06-28 16:31:27,931] Post Condition: Close browser
+[INFO ] [2021-06-28 16:32:58,753] Pre-Condition: Open browser: 'firefox' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-28 16:33:09,490] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-06-28 16:33:09,495] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-06-28 16:33:14,221] User_01_Register - Step 03: Click To Gender Radio Button
+[INFO ] [2021-06-28 16:33:14,500] User_01_Register - Step 04: Enter Frist Name Textbox
+[INFO ] [2021-06-28 16:33:14,579] User_01_Register - Step 05: Enter Last Name Textbox
+[INFO ] [2021-06-28 16:33:14,649] User_01_Register - Step 06: Enter Email textbox with value: zinzin605@yahoo.com
+[INFO ] [2021-06-28 16:33:14,734] User_01_Register - Step 07: Enter Password textbox with value: 123123
+[INFO ] [2021-06-28 16:33:14,793] User_01_Register - Step 08: Enter Confirm Password Textbox with value: 123123
+[INFO ] [2021-06-28 16:33:14,848] User_01_Register - Step 09: Click To Register Button
+[INFO ] [2021-06-28 16:33:16,608] User_01_Register - Step 10: Verify User Created Success Message
+[INFO ] [2021-06-28 16:33:16,665] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 16:33:16,666] User_01_Register - Step 11: click to Logout link
+[INFO ] [2021-06-28 16:33:21,340] User_01_Register - Step 12: Verify Home page is Displayed
+[INFO ] [2021-06-28 16:33:21,420] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-28 16:33:21,423] User_02_Login - Step 01: Click To Login link
+[INFO ] [2021-06-28 16:33:22,786] User_02_Login - Step 02: Enter Email textbox with value: zinzin605@yahoo.com
+[INFO ] [2021-06-28 16:33:22,862] User_02_Login - Step 03: Enter Password textbox with value: 123123
+[INFO ] [2021-06-28 16:33:22,923] User_02_Login - Step 04: click to Login button
+[INFO ] [2021-06-28 16:33:24,794] User_02_Login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-06-28 16:33:24,851] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-28 16:33:24,852] Post Condition: Close browser
+[INFO ] [2021-06-28 20:59:40,777] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 20:59:43,833] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 20:59:44,011] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-28 20:59:44,047] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-28 21:00:44,422] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:00:47,474] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:00:47,653] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-28 21:00:47,693] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-28 21:09:44,961] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:09:48,022] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:09:48,223] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-28 21:09:48,254] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-28 21:10:53,935] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:10:56,986] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-28 21:10:57,203] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-28 21:10:57,268] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-28 21:12:30,988] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:12:34,048] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-28 21:12:34,251] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:12:34,286] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:22:11,739] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:22:14,801] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:22:14,977] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:22:15,009] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:51:20,423] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:51:23,483] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:51:23,669] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:51:23,706] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:52:51,282] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:52:54,311] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:52:57,494] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:52:57,522] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:57:05,905] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:57:08,954] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-28 21:57:12,154] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:57:12,190] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:57:43,365] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:57:46,402] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:57:49,574] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:57:49,602] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:58:57,459] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:59:00,509] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-28 21:59:03,673] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 21:59:03,702] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 22:05:20,311] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 22:05:23,350] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-28 22:05:26,523] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-28 22:05:26,552] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-29 07:36:38,755] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 07:36:41,807] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 07:36:44,948] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-29 07:36:44,977] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 07:38:32,535] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 07:38:35,566] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 07:38:38,733] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 07:38:38,758] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 07:42:51,572] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 07:42:54,633] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 07:42:57,817] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 07:42:57,850] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 07:47:46,572] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 07:47:49,620] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 07:47:52,860] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 07:47:52,891] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 07:49:49,142] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 07:49:52,202] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 07:49:55,413] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 07:49:55,449] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-29 07:54:07,696] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 07:54:10,755] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 07:54:13,980] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 07:54:14,016] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-29 07:59:58,423] Pre-Condition: Open browser: 'firefox' and navigate to: 'https://demo.nopcommerce.com/'
+[INFO ] [2021-06-29 08:00:14,560] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-06-29 08:00:14,563] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-06-29 08:00:19,666] User_01_Register - Step 03: Click To Gender Radio Button
+[INFO ] [2021-06-29 08:00:19,922] User_01_Register - Step 04: Enter Frist Name Textbox
+[INFO ] [2021-06-29 08:00:20,012] User_01_Register - Step 05: Enter Last Name Textbox
+[INFO ] [2021-06-29 08:00:20,077] User_01_Register - Step 06: Enter Email textbox with value: zinzin1288@yahoo.com
+[INFO ] [2021-06-29 08:00:20,165] User_01_Register - Step 07: Enter Password textbox with value: 123123
+[INFO ] [2021-06-29 08:00:20,238] User_01_Register - Step 08: Enter Confirm Password Textbox with value: 123123
+[INFO ] [2021-06-29 08:00:20,304] User_01_Register - Step 09: Click To Register Button
+[INFO ] [2021-06-29 08:00:21,189] User_01_Register - Step 10: Verify User Created Success Message
+[INFO ] [2021-06-29 08:00:21,243] -------------------------- PASSED --------------------------
+[INFO ] [2021-06-29 08:00:21,244] User_01_Register - Step 11: click to Logout link
+[INFO ] [2021-06-29 08:00:25,895] User_01_Register - Step 12: Verify Home page is Displayed
+[INFO ] [2021-06-29 08:00:25,988] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 08:00:25,994] User_02_Login - Step 01: Click To Login link
+[INFO ] [2021-06-29 08:00:27,376] User_02_Login - Step 02: Enter Email textbox with value: zinzin1288@yahoo.com
+[INFO ] [2021-06-29 08:00:27,458] User_02_Login - Step 03: Enter Password textbox with value: 123123
+[INFO ] [2021-06-29 08:00:27,519] User_02_Login - Step 04: click to Login button
+[INFO ] [2021-06-29 08:00:29,209] User_02_Login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-06-29 08:00:29,267] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 08:00:29,270] Post Condition: Close browser
+[INFO ] [2021-06-29 08:08:49,181] Dung ham custom hard assert de kiem tra
+[INFO ] [2021-06-29 08:08:49,276] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 08:08:52,327] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 08:08:55,559] -------------------------- FAILED --------------------------
+[INFO ] [2021-06-29 08:08:55,592] -------------------------- PASSED --------------------------

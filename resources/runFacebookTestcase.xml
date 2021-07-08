@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="NopCommerce" parallel="false">
+<suite name="Facebook" parallel="false">
 	<listeners>
 		<listener class-name = "commons.MethodListener" />
+		<listener class-name = "reportConfig.ExtentReportListenerV2" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 	</listeners>
 	<parameter name="url" value="https://www.facebook.com/r.php" />
 	<test name="Run on CHROME">

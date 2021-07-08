@@ -17,7 +17,7 @@ public class RegisterPageObject extends BasePage {
 		return isElementDisplayed(driver, RegisterPageUI.EMAIL_TEXTBOX);
 	}
 
-	public boolean isConfirmEmailUnDisplayed() {
+	public boolean isConfirmEmailTextboxUnDisplayed() {
 		return isElementUndisplayed(driver, RegisterPageUI.CONFIRM_EMAIL_TEXTBOX);
 	}
 
@@ -39,6 +39,11 @@ public class RegisterPageObject extends BasePage {
 
 	public boolean isEmailTextboxUnisplayed() {
 		return isElementUndisplayed(driver, RegisterPageUI.EMAIL_TEXTBOX);
+	}
+
+	public boolean isConfirmEmailTextboxDisplayed() {
+		// TODO Auto-generated method stub
+		return isElementDisplayed(driver, RegisterPageUI.CONFIRM_EMAIL_TEXTBOX);
 	}
 
 

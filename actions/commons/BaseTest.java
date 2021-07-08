@@ -1,5 +1,6 @@
 package commons;
 
+import java.io.File;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -11,6 +12,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.BeforeTest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -22,7 +24,10 @@ public class BaseTest {
 		log = LogFactory.getLog(getClass());
 	}
 	// private String localPath = System.getProperty("user.dir");
-
+	
+	public WebDriver getWebDriver() {
+		return this.driver;
+	}
 	private enum BROWSERS {
 		CHROME, FIREFOX, IE, SAFARY, EDGE_LAGACY, EDGE_CHROMIUM, H_CHROME, H_FIREFOX;
 	}
@@ -113,7 +118,7 @@ public class BaseTest {
 			} else {
 				log.info("-------------------------- FAILED --------------------------");
 			}
-			Assert.assertTrue(condition);
+			Assert.assertFalse(condition);
 		} catch (Throwable e) {
 			pass = false;
 			
@@ -161,5 +166,26 @@ public class BaseTest {
 			e.printStackTrace();
 		}
 	}
+
+	@BeforeTest
+	public void deleteAllFilesInReportNGScreenshot() {
+		System.out.println("---------- START delete file in folder ----------");
+		try {
+			String workingDir = System.getProperty("user.dir");
+			String pathFolderDownload = workingDir + "\\screenshotReportNG";
+			File file = new File(pathFolderDownload);
+			File[] listOfFiles = file.listFiles();
+			for (int i = 0; i < listOfFiles.length; i++) {
+				if (listOfFiles[i].isFile()) {
+					System.out.println(listOfFiles[i].getName());
+					new File(listOfFiles[i].toString()).delete();
+				}
+			}
+		} catch (Exception e) {
+			System.out.print(e.getMessage());
+		}
+		System.out.println("---------- END delete file in folder ----------");
+	}
+
 
 }

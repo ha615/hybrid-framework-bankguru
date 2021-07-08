@@ -33,14 +33,14 @@ public class Level11_Register_Login_Element_Undisplayed extends BaseTest {
 	public void Register_05_Element_Undisplayed() {
 		registerPage.enterEmailTextbox("");
 		sleepInSecond(3);
-		Assert.assertTrue(registerPage.isConfirmEmailUnDisplayed());
+		Assert.assertTrue(registerPage.isConfirmEmailTextboxUnDisplayed());
 	}
 
 	@Test
 	public void Register_02_Element_Undisplayed_On_UI_And_Visible_In_DOM() {
 		registerPage.enterEmailTextbox("");
 		sleepInSecond(3);
-		Assert.assertTrue(registerPage.isConfirmEmailUnDisplayed());
+		Assert.assertTrue(registerPage.isConfirmEmailTextboxUnDisplayed());
 		
 	}
 	
