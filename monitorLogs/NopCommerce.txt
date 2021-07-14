@@ -1,21 +1,21 @@
-[INFO ] [2021-07-09 11:15:24,099] User_01_Register - Step 01: Open Home Page
-[INFO ] [2021-07-09 11:15:24,107] User_01_Register - Step 02: Open Register Page
-[INFO ] [2021-07-09 11:15:29,170] User_01_Register - Step 03: Click To Gender Radio Button
-[INFO ] [2021-07-09 11:15:29,460] User_01_Register - Step 04: Enter Frist Name Textbox
-[INFO ] [2021-07-09 11:15:29,564] User_01_Register - Step 05: Enter Last Name Textbox
-[INFO ] [2021-07-09 11:15:29,632] User_01_Register - Step 06: Enter Email textbox with value: zinzin8836@yahoo.com
-[INFO ] [2021-07-09 11:15:29,707] User_01_Register - Step 07: Enter Password textbox with value: 123123
-[INFO ] [2021-07-09 11:15:29,764] User_01_Register - Step 08: Enter Confirm Password Textbox with value: 123123
-[INFO ] [2021-07-09 11:15:29,820] User_01_Register - Step 09: Click To Register Button
-[INFO ] [2021-07-09 11:15:32,378] User_01_Register - Step 10: Verify User Created Success Message
-[INFO ] [2021-07-09 11:15:32,436] -------------------------- PASSED --------------------------
-[INFO ] [2021-07-09 11:15:32,437] User_01_Register - Step 11: click to Logout link
-[INFO ] [2021-07-09 11:15:37,933] User_01_Register - Step 12: Verify Home page is Displayed
-[INFO ] [2021-07-09 11:15:37,977] -------------------------- PASSED --------------------------
-[INFO ] [2021-07-09 11:15:38,077] User_02_Login_To_System
-[INFO ] [2021-07-09 11:15:38,077] User_02_Login - Step 01: Click To Login link
-[INFO ] [2021-07-09 11:15:39,254] User_02_Login - Step 02: Enter Email textbox with value: zinzin8836@yahoo.com
-[INFO ] [2021-07-09 11:15:39,347] User_02_Login - Step 03: Enter Password textbox with value: 123123
-[INFO ] [2021-07-09 11:15:39,422] User_02_Login - Step 04: click to Login button
-[INFO ] [2021-07-09 11:15:40,295] User_02_Login - Step 05: Verify Home Page is displayed
-[INFO ] [2021-07-09 11:15:40,383] -------------------------- FAILED --------------------------
+[INFO ] [2021-07-14 17:31:47,076] User_01_Register - Step 01: Open Home Page
+[INFO ] [2021-07-14 17:31:47,105] User_01_Register - Step 02: Open Register Page
+[INFO ] [2021-07-14 17:31:51,934] User_01_Register - Step 03: Click To Gender Radio Button
+[INFO ] [2021-07-14 17:31:52,210] User_01_Register - Step 04: Enter Frist Name Textbox
+[INFO ] [2021-07-14 17:31:52,287] User_01_Register - Step 05: Enter Last Name Textbox
+[INFO ] [2021-07-14 17:31:52,364] User_01_Register - Step 06: Enter Email textbox with value: zinzin5310@yahoo.com
+[INFO ] [2021-07-14 17:31:52,440] User_01_Register - Step 07: Enter Password textbox with value: 123123
+[INFO ] [2021-07-14 17:31:52,506] User_01_Register - Step 08: Enter Confirm Password Textbox with value: 123123
+[INFO ] [2021-07-14 17:31:52,570] User_01_Register - Step 09: Click To Register Button
+[INFO ] [2021-07-14 17:31:54,100] User_01_Register - Step 10: Verify User Created Success Message
+[INFO ] [2021-07-14 17:31:54,163] -------------------------- PASSED --------------------------
+[INFO ] [2021-07-14 17:31:54,166] User_01_Register - Step 11: click to Logout link
+[INFO ] [2021-07-14 17:31:59,443] User_01_Register - Step 12: Verify Home page is Displayed
+[INFO ] [2021-07-14 17:31:59,546] -------------------------- PASSED --------------------------
+[INFO ] [2021-07-14 17:31:59,736] User_02_Login_To_System
+[INFO ] [2021-07-14 17:31:59,736] User_02_Login - Step 01: Click To Login link
+[INFO ] [2021-07-14 17:32:00,854] User_02_Login - Step 02: Enter Email textbox with value: zinzin5310@yahoo.com
+[INFO ] [2021-07-14 17:32:00,928] User_02_Login - Step 03: Enter Password textbox with value: 123123
+[INFO ] [2021-07-14 17:32:00,984] User_02_Login - Step 04: click to Login button
+[INFO ] [2021-07-14 17:32:03,193] User_02_Login - Step 05: Verify Home Page is displayed
+[INFO ] [2021-07-14 17:32:03,264] -------------------------- FAILED --------------------------

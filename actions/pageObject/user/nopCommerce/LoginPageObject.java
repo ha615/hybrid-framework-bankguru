@@ -3,6 +3,7 @@ package pageObject.user.nopCommerce;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
+import io.qameta.allure.Step;
 import pageUIs.user.nopCommerce.LoginPageUI;
 
 public class LoginPageObject extends BasePage{
@@ -10,17 +11,17 @@ public class LoginPageObject extends BasePage{
 	public LoginPageObject(WebDriver driver) {
 		this.driver = driver;
 	}
-
+	@Step("Enter to email text box {0}")
 	public void enterEmailTextbox(String value) {
 		waitForElementVisible(driver, LoginPageUI.EMAIL_TEXTBOX);
 		sendKeyToElement(driver, LoginPageUI.EMAIL_TEXTBOX, value);
 	}
-
+	@Step("Enter to password text box {0}")
 	public void enterPassword(String value) {
 		waitForElementVisible(driver, LoginPageUI.PASSWORD_TEXTBOX);
 		sendKeyToElement(driver, LoginPageUI.PASSWORD_TEXTBOX, value);
 	}
-	
+	@Step("Click to login button")
 	public HomePageObject clickToLoginButton() {
 		waitForElementVisible(driver, LoginPageUI.LOGIN_BUTTON);
 		clickToElement(driver, LoginPageUI.LOGIN_BUTTON);
