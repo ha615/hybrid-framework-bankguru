@@ -34,7 +34,7 @@ public class Level08_Register_Login_Switch_Page_Use_Dynamic_Locator extends Base
 		driver = getBrowserDriver(browserName, appURL);
 		email = getRandomEmail();
 		password = "123123";
-		homePage = PageGeneratorManager.getHomePape(driver);
+		homePage = PageGeneratorManager.getHomePage(driver);
 
 	}
 

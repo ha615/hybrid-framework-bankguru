@@ -28,7 +28,17 @@ public class LoginPageObject extends BasePage{
 		if(driver.toString().contains("chrome")||driver.toString().contains("edge_chromium")) {
 			sleepSecond(3);
 		}
-		return PageGeneratorManager.getHomePape(driver);
+		return PageGeneratorManager.getHomePage(driver);
+	}
+	
+	@Step("Click to homepage link")
+	public HomePageObject openHomePage() {
+		waitForElementVisible(driver, LoginPageUI.HOME_PAGE_LINK);
+		clickToElement(driver, LoginPageUI.HOME_PAGE_LINK);
+		if(driver.toString().contains("chrome")||driver.toString().contains("edge_chromium")) {
+			sleepSecond(3);
+		}
+		return PageGeneratorManager.getHomePage(driver);
 	}
 
 	

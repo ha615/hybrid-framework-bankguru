@@ -14,7 +14,7 @@ public class PageGeneratorManager {
 //	private static ShoppingCartObject shoppingCart;
 //	private static DashboardPageObject dashboardPage;
 	
-	public static HomePageObject getHomePape(WebDriver driver) {
+	public static HomePageObject getHomePage(WebDriver driver) {
 //		if(homePage == null) {
 //			homePage = new HomePageObject(driver);
 //		}
@@ -68,5 +68,7 @@ public class PageGeneratorManager {
 //			dashboardPage = new DashboardPageObject(driver);
 		return new DashboardPageObject(driver);
 	}
+
+
 	
 }

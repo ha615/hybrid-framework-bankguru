@@ -28,7 +28,7 @@ public class Level06_Register_Login_Page_Generator extends BaseTest {
 		driver = getBrowserDriver(browserName, appURL);
 		email = getRandomEmail();
 		password = "123123";
-		homePage = PageGeneratorManager.getHomePape(driver);
+		homePage = PageGeneratorManager.getHomePage(driver);
 
 	}
 

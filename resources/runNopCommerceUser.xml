@@ -9,15 +9,15 @@
 <!-- 		<listener class-name="org.uncommons.reportng.HTMLReporter" /> -->
 <!-- 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" /> -->
 <!-- 		<listener class-name="reportConfig.ExtentTestListener	" /> -->
-<!-- 		<listener class-name="reportConfig.ReportNGListener" /> -->
-		<listener class-name="reportConfig.AllureTestListener" />
+		<listener class-name="reportConfig.ReportNGListener" />
+<!-- 		<listener class-name="reportConfig.AllureTestListener" /> -->
 	</listeners>
 
 	<test name="Run on FIREFOX">
 		<parameter name="browser" value="firefox" />
 		<classes>
-<!-- 			<class name="com.nopcommerce.login.Level13_Register_Login_Log_Extend_Report_V4" /> -->
-			<class name="com.nopcommerce.login.Level13_Register_Login_Log_Allure_Report" />
+			<class name="com.nopcommerce.common.Common_01_Login" />
+			<class name="com.nopcommerce.login.Level14_Register_Login_Share_State" />
 		</classes>
 	</test>
 	
@@ -31,7 +31,7 @@
 <!-- 	<test name="Run on CHROME"> -->
 <!-- 		<parameter name="browser" value="chrome" /> -->
 <!-- 		<classes> -->
-<!-- 			<class name="com.nopcommerce.login.Level13_Register_Login_Log_Report" /> -->
+<!-- 			<class name="com.nopcommerce.login.Level13_Register_Login_Log_Allure_Report" /> -->
 <!-- 		</classes> -->
 <!-- 	</test> -->
 </suite> <!---->

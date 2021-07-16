@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -57,6 +58,16 @@ public class BasePage {
 		return driver.getPageSource();
 	}
 
+	public Set<Cookie> getAllCookies(WebDriver driver) {
+		return driver.manage().getCookies();
+	}
+	
+	public void setCookies(WebDriver driver, Set<Cookie> allCookies) {
+		for(Cookie cookie:allCookies) {
+			driver.manage().addCookie(cookie);
+		}
+	}
+	
 	public void backPage(WebDriver driver) {
 		driver.navigate().back();
 	}
@@ -127,7 +138,7 @@ public class BasePage {
 		}
 	}
 
-	protected void sleepSecond(long time) {
+	public void sleepSecond(long time) {
 
 		// TODO Auto-generated method stub
 		try {
@@ -541,7 +552,7 @@ public class BasePage {
 		case "Shopping cart":
 			return PageGeneratorManager.getShoppingCartPage(driver);
 		default:
-			return PageGeneratorManager.getHomePape(driver);
+			return PageGeneratorManager.getHomePage(driver);
 		}
 	}
 	//Case 2: multiple page

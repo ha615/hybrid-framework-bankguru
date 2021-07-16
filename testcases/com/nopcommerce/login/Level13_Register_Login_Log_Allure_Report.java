@@ -1,6 +1,7 @@
 package com.nopcommerce.login;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -99,9 +100,11 @@ public class Level13_Register_Login_Log_Allure_Report extends BaseTest {
 		log.info("User_02_Login - Step 05: Verify Home Page is displayed");
 		verifyFalse(homePage.verifyHomePageSliderDisplayed());
 	}
-
-	@AfterClass
-	public void quitBrowser() {
-		driver.quit();
+	
+	@Parameters("browser")
+	@AfterClass(alwaysRun = true)
+	public void quitBrowser(String browserName) {
+		log.info("Post-condition: Close browser " + browserName);
+		cleanBrowserAndDriver();
 	}
 }

@@ -1,6 +1,7 @@
 package commons;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -24,10 +25,11 @@ public class BaseTest {
 		log = LogFactory.getLog(getClass());
 	}
 	// private String localPath = System.getProperty("user.dir");
-	
+
 	public WebDriver getWebDriver() {
 		return this.driver;
 	}
+
 	private enum BROWSERS {
 		CHROME, FIREFOX, IE, SAFARY, EDGE_LAGACY, EDGE_CHROMIUM, H_CHROME, H_FIREFOX;
 	}
@@ -98,10 +100,10 @@ public class BaseTest {
 			Assert.assertTrue(condition);
 		} catch (Throwable e) {
 			pass = false;
-			
+
 			// Add lỗi vào ReportNG
-			 VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
-			 Reporter.getCurrentTestResult().setThrowable(e);
+			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
+			Reporter.getCurrentTestResult().setThrowable(e);
 		}
 		return pass;
 	}
@@ -109,7 +111,7 @@ public class BaseTest {
 	protected boolean verifyTrue(boolean condition) {
 		return checkTrue(condition);
 	}
-	
+
 	private boolean checkFailed(boolean condition) {
 		boolean pass = true;
 		try {
@@ -121,10 +123,10 @@ public class BaseTest {
 			Assert.assertFalse(condition);
 		} catch (Throwable e) {
 			pass = false;
-			
+
 			// Add lỗi vào ReportNG
-			 VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
-			 Reporter.getCurrentTestResult().setThrowable(e);
+			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
+			Reporter.getCurrentTestResult().setThrowable(e);
 		}
 		return pass;
 	}
@@ -132,23 +134,22 @@ public class BaseTest {
 	protected boolean verifyFalse(boolean condition) {
 		return checkFailed(condition);
 	}
-	
+
 	private boolean checkEquals(Object actual, Object expected) {
 		boolean pass = true;
 		try {
 			Assert.assertEquals(actual, expected);
 			log.info("-------------------------- PASS --------------------------");
-		}
-		catch(Throwable e) {
+		} catch (Throwable e) {
 			pass = false;
 			log.info("-------------------------- FAILED --------------------------");
 			// Add lỗi vào ReportNG
-			 VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
-			 Reporter.getCurrentTestResult().setThrowable(e);
+			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
+			Reporter.getCurrentTestResult().setThrowable(e);
 		}
 		return pass;
 	}
-	
+
 	protected boolean verifyEquals(Object actual, Object expected) {
 		return checkEquals(actual, expected);
 	}
@@ -187,5 +188,54 @@ public class BaseTest {
 		System.out.println("---------- END delete file in folder ----------");
 	}
 
+	protected void cleanBrowserAndDriver() {
+		// Khai báo 1 biến command line để thực thi
+		String cmd = "";
+		try {
+			// Get ra tên của OS và convert qua chữ thường
+			String osName = System.getProperty("os.name").toLowerCase();
+			log.info("OS name = " + osName);
+			// Quit driver executable file in Task Manager
+			if (driver.toString().contains("chrome")) {
+				if (osName.contains("windows"))
+					cmd = "taskkill /F /FI \"IMAGENAME eq chromedriver*\"";
+				else
+					cmd = "pkill chromedriver";
+			} else if (driver.toString().contains("internetexplorer")) {
+				if (osName.contains("window"))
+					cmd = "taskkill /F /FI \"IMAGENAME eq IEDriverServer*\"";
+			} else if (driver.toString().contains("firefox")) {
+				if (osName.contains("windows"))
+					cmd = "taskkill /F /FI \"IMAGENAME eq geckodriver*\"";
+				else
+					cmd = "pkill geckodriver";
+
+			} else if (driver.toString().contains("edge")) {
+				if (osName.contains("windows"))
+					cmd = "taskkill /F /FI \"IMAGENAME eq msedgedriver*\"";
+				else
+					cmd = "pkill msedgedriver";
+			}
+			// Browser
+			if (driver != null) {
+				// IE browser
+				driver.manage().deleteAllCookies();
+				driver.quit();
+			}
+			log.info("---------- QUIT BROWSER SUCCESS ----------");
+		} catch (Exception e) {
+			log.info(e.getMessage());
+		}finally {
+			try {
+				Process process = Runtime.getRuntime().exec(cmd);
+				process.waitFor();
+				System.out.println("Run Comand line");
+			} catch (IOException e) {
+				e.printStackTrace();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
 
 }
