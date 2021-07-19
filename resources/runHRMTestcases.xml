@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- <suite name="User - NopCommerce" parallel="false"> -->
-<suite name="HR Manegement" parallel="tests" thread-count = "3">
+<suite name="Human Resource Management" parallel="false">
+<!-- <suite name="HR Manegement" parallel="tests" thread-count = "3"> -->
 	<listeners>
-		<listener class-name="org.uncommons.reportng.HTMLReporter" />
-		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
-		<listener class-name="reportConfig.ExtentReportListenerV2" />
+<!-- 		<listener class-name="org.uncommons.reportng.HTMLReporter" /> -->
+<!-- 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" /> -->
+<!-- 		<listener class-name="reportConfig.ExtentReportListenerV2" /> -->
 	</listeners>
-	<parameter name="url" value="https://opensource-demo.orangehrmlive.com/index.php/dashboard" />
+	<parameter name="url" value="https://opensource-demo.orangehrmlive.com/index.php/auth/login" />
 
 	<test name="Run on CHROME">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.hrm.employee.Add_Edit_Employee_User" />
+			<class name="com.hrm.employee.Level16_Live_Coding" />
 		</classes>
 	</test>
 

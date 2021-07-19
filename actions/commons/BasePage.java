@@ -18,19 +18,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import pageObject.admin.nopCommerce.ProductSearchPageObject;
-import pageObject.user.nopCommerce.LoginPageObject;
 import pageObject.user.nopCommerce.MyAccountPageObject;
 import pageObject.user.nopCommerce.OrderPageObject;
 import pageObject.user.nopCommerce.PageGeneratorManager;
-import pageObject.user.nopCommerce.RegisterPageObject;
 import pageObject.user.nopCommerce.SearchPageObject;
-import pageUIs.HRM.HRMAbstractPageUI;
-import pageUIs.admin.nopCommerce.DashboardPageUI;
-import pageUIs.user.nopCommerce.HomePageUI;
-import pageUIs.user.nopCommerce.MyAccountPageUI;
-import pageUIs.user.nopCommerce.OrderPageUI;
-import pageUIs.user.nopCommerce.SearchPageUI;
 
 public class BasePage {
 
@@ -367,7 +358,7 @@ public class BasePage {
 				.executeScript("return document.documentElement.innerText.match('" + textExpected + "')[0]");
 		return textActual.equals(textExpected);
 	}
-
+	
 	public void scrollToBottomPage(WebDriver driver) {
 		jsExecutor = (JavascriptExecutor) driver;
 		jsExecutor.executeScript("window.scrollBy(0,document.body.scrollHeight)");
@@ -583,13 +574,13 @@ public class BasePage {
 	
 	//HRM PROJECT
 	public void mouseHoverToMenu(WebDriver driver, String value) {
-		waitForElementVisible(driver, HRMAbstractPageUI.DYNAMIC_MENU_LINK, value);
-		hoverToElement(driver, HRMAbstractPageUI.DYNAMIC_MENU_LINK, value);
+		waitForElementVisible(driver, HRBasePageUI.MAIN_MENU, value);
+		hoverToElement(driver, HRBasePageUI.MAIN_MENU, value);
 	}
 	
 	public void openMenuPageByName(WebDriver driver, String menuName) {
-		waitForElementClickable(driver, HRMAbstractPageUI.DYNAMIC_MENU_LINK, menuName);
-		clickToElement(driver, HRMAbstractPageUI.DYNAMIC_MENU_LINK, menuName);
+		waitForElementClickable(driver, HRBasePageUI.EMPLOYEE_LIST, menuName);
+		clickToElement(driver, HRBasePageUI.EMPLOYEE_LIST, menuName);
 	}
 	
 	private Alert alert;

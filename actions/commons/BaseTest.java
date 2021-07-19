@@ -60,7 +60,7 @@ public class BaseTest {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("http://live.demoguru99.com");
 		return driver;
-	}
+	} 
 
 	protected WebDriver getBrowserDriver(String browserName, String appUrl) {
 		if (browserName.equals("firefox")) {
